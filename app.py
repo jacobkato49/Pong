@@ -41,6 +41,16 @@ paddle_ball.penup()
 paddle_ball.goto(0,0)
 
 
+#function (moving the paddle)
+def paddle_a_up():
+    y = paddle_a.ycor()
+    y += 20 #adds 20 pixels to y
+    paddle_a.sety(y)
+
+#keyboard binding
+wn.listen() #listen for keyboard input
+wn.onkeypress(paddle_a_up, 'w')
+
 #main game loop
 while True:
     wn.update() #every time the loop runs it updates the screen
