@@ -33,12 +33,15 @@ paddle_b.goto(350,0)
 
 
 #ball
-paddle_ball = turtle.Turtle()
-paddle_ball.speed() #sets speed of animation
-paddle_ball.shape('square') #box is 20x20
-paddle_ball.color('white', 'black')
-paddle_ball.penup()
-paddle_ball.goto(0,0)
+ball = turtle.Turtle()
+ball.speed(0) #sets speed of animation
+ball.shape('square') #box is 20x20
+ball.color('white')
+ball.penup()
+ball.goto(0,0)
+ball.dx = 0.1
+ball.dy = 0.1
+
 
 
 #function (moving the paddle)
@@ -73,3 +76,7 @@ wn.onkeypress(paddle_b_down, 'Down')
 #main game loop
 while True:
     wn.update() #every time the loop runs it updates the screen
+
+    # move the ball
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
