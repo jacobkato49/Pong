@@ -25,7 +25,7 @@
 <br />
 <p align="center">
   <!-- <a href="https://github.com/othneildrew/Best-README-Template"> -->
-    <img src="images/screenshot.JP" alt="Logo" width="500" height="500">
+    <img src="images/screenshot.JPG" alt="Logo" width="500" height="500">
   </a>
 
   <h3 align="center">Pong Game (freeCodeCamp.org)</h3>
